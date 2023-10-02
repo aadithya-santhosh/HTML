@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="SurveyForm.css" />
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+
+            <fieldset>
+                <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Enter your name"/></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="Enter your email"/></label>
+                <label id="number-label" for="number">Age: <input id="number" type="number" min="0" max="100" placeholder="Enter your age"/></label>
+                <label>Gender</label>
+            </fieldset>
+                
+            <fieldset>
+                <select id="dropdown">
+                    <option value="0">(select one)</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label>Employment status</label>
+                <label for="employed"><input id="employed" type="radio" value="3" name="employment_status" />Employed</label>
+                <label for="unemployed"><input id="unemployed" type="radio" value="4" name="employment_status"/>Unemployed</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="married"><input id="married" name="married" value="1" type="checkbox"/>Married</label>
+                <label for="unmarried"><input id="unmarried" name="unmarried" value="2" type="checkbox" />Unmarried</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Comments: <textarea id="comments" placeholder="Enter comments here..."></textarea></label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
